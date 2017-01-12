@@ -6,7 +6,9 @@ Nonetheless, a clear error message would look like: `file '/foo/bar.sh' is missi
 
 ## Instructions
 
+Steps to reproduce the message:
+
 ```sh
-$ ./trigger-error.sh 
+$ git clone https://github.com/klingtnet/unintuitive-docker-error-message.git && cd unintuitive-docker-error-message && ./trigger-error.sh 
 docker: Error response from daemon: oci runtime error: rootfs_linux.go:53: mounting "/var/lib/docker/devicemapper/mnt/293288098b315e070975512b52113dc6cbe49d5de455f1cb6f113729520fe2e9/rootfs/usr/bin/foo" to rootfs "/var/lib/docker/devicemapper/mnt/293288098b315e070975512b52113dc6cbe49d5de455f1cb6f113729520fe2e9/rootfs" caused "not a directory".
 ```
